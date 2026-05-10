@@ -1,4 +1,4 @@
-package Practice.DesignPattern;
+package Practice.DesignPattern.SingletonDesign;
 
 public class PrinterManager {
     // 1. Create a private static variable to hold the ONE instance
