@@ -16,5 +16,11 @@ public class FirstNonRepeatingChar {
                 .map(Map.Entry::getKey).findFirst().orElse(null);
 
         System.out.println(ch);
+
+        //--------Approach 2-------------------
+        Character cc=str.chars().mapToObj(c->(char) c)
+                .filter(i->str.indexOf(i)==str.lastIndexOf(i)).findFirst().get();
+
+        System.out.println(cc);
     }
 }
