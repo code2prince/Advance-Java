@@ -9,13 +9,10 @@ public class MergeTwoSortedArray {
         int i=0, j=0, k=0;
         while(i<arr1.length && j<arr2.length) {
             if (arr1[i] <= arr2[j]) {
-                res[k] = arr1[i];
-                i++;
+                res[k++] = arr1[i++];
             }else{
-                res[k]=arr2[j];
-                j++;
+                res[k++]=arr2[j++];
             }
-            k++;
         }
         while(i<arr1.length){
             res[k++]=arr1[i++];
