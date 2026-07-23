@@ -20,7 +20,7 @@ public class WordReverse {
             st.push(word.toString());
         }
 
-        while (!word.isEmpty()) {
+        while (!st.isEmpty()) {
             System.out.println(st.pop());
         }
     }
